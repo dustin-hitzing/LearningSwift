@@ -9,5 +9,6 @@
         <page name='Functions'/>
         <page name='OOP Swift'/>
         <page name='Classes'/>
+        <page name='TowerGame'/>
     </pages>
 </playground>
