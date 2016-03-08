@@ -34,3 +34,25 @@ class Car: Vehicle {
 }
 let someCar = Car(withDoors: 4, andWheels: 4)
 
+class Person {
+    let firstName: String
+    let lastName: String
+    
+    init(firstName: String, lastName: String) {
+        self.firstName = firstName
+        self.lastName = lastName
+    }
+    
+    func getFullName() -> String {
+        return "\(firstName) \(lastName)"
+    }
+}
+
+class Doctor: Person{
+    override func getFullName()->String{
+        return "Dr. \(lastName)"
+    }
+}
+
+let someDoctor = Doctor(firstName: "Samantha", lastName: "Smith")
+
